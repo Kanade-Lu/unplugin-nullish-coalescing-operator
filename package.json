@@ -1,18 +1,10 @@
 {
-  "name": "unplugin-starter",
+  "name": "unplugin-nullish-coalescing-operator",
   "type": "module",
   "version": "0.1.0",
-  "packageManager": "pnpm@8.6.12",
+  "packageManager": "pnpm@9.12.1+sha512.e5a7e52a4183a02d5931057f7a0dbff9d5e9ce3161e33fa68ae392125b79282a8a8a470a51dfc8a0ed86221442eb2fb57019b0990ed24fab519bf0e1bc5ccfc4",
   "description": "",
   "license": "MIT",
-  "homepage": "https://github.com/antfu/unplugin-starter#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/antfu/unplugin-starter.git"
-  },
-  "bugs": {
-    "url": "https://github.com/antfu/unplugin-starter/issues"
-  },
   "keywords": [
     "unplugin",
     "vite",
@@ -88,6 +80,7 @@
     "build:fix": "esno scripts/postbuild.ts",
     "lint": "eslint .",
     "play": "npm -C playground run dev",
+    "play:webpack": "npm -C playground run dev:webpack",
     "prepublishOnly": "npm run build",
     "release": "bumpp && npm publish",
     "start": "esno src/index.ts",
@@ -125,6 +118,15 @@
     "unplugin": "^1.5.1"
   },
   "devDependencies": {
+    "@babel/core": "7.21.5",
+    "@babel/generator": "^7.21.5",
+    "@babel/parser": "7.21.5",
+    "@babel/preset-typescript": "^7.21.5",
+    "@babel/traverse": "^7.21.5",
+    "@babel/types": "^7.21.5",
+    "@types/babel__core": "^7.20.0",
+    "@types/babel__generator": "^7.6.4",
+    "@types/babel__traverse": "^7.18.5",
     "@antfu/eslint-config": "^2.2.2",
     "@nuxt/kit": "^3.8.2",
     "@nuxt/schema": "^3.8.2",
